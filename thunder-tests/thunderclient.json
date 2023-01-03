@@ -46,7 +46,7 @@
     "method": "GET",
     "sortNum": 30000,
     "created": "2023-01-01T18:43:36.468Z",
-    "modified": "2023-01-01T18:44:01.991Z",
+    "modified": "2023-01-03T03:23:00.613Z",
     "headers": [
       {
         "name": "Authorization",
@@ -106,6 +106,62 @@
       }
     ],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "77fb868d-0150-4b6f-8f8c-b593796254e7",
+    "colId": "8a40bd99-2b8f-4172-8992-370d789f30f4",
+    "containerId": "",
+    "name": "createJwtToken",
+    "url": "http://localhost:8080/authenticate",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-01-02T19:47:02.753Z",
+    "modified": "2023-01-02T19:49:03.744Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Basic ZnJhcm06MTU5NzUz"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3e356492-aab4-4204-92b2-5be20c93029b",
+    "colId": "8a40bd99-2b8f-4172-8992-370d789f30f4",
+    "containerId": "",
+    "name": "createTodoJwt",
+    "url": "http://localhost:8080/users/frarm/todos",
+    "method": "POST",
+    "sortNum": 45000,
+    "created": "2023-01-02T20:31:10.503Z",
+    "modified": "2023-01-02T20:32:37.702Z",
+    "headers": [
+      {
+        "name": "Authorization",
+        "value": "Bearer eyJraWQiOiI2ODVmNDg2NC03ZDMyLTQ0NTUtYjk4NC1kNTA1Njk2ODIyMmYiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiZnJhcm0iLCJleHAiOjE2NzI2OTMxMzQsImlhdCI6MTY3MjY5MTMzNCwic2NvcGUiOiJST0xFX1VTRVIifQ.d-jSgwZGU-plNY6OOYmG1T6JRlMpTh7hi4HR2lSgGp_cdNtsUF0vbfIvFPBwmHh-nl86Vmm9dpaQPjIL7j2-86paI8LwYos8NWPsiJUSHGJxac_9lFBOHjez4_Yq4K3suKR9aIi7eODg7HW0ji1NcNQJeaFX9-rgQ_fw2K93qEIF-femURJUpwe_4z4pnoiAQNzabDT74WJTN7Kx2HEwiQJP2yB3dMO5dWcnbyg_NA-6fLdfjuCdhp3CGxYLdFPYBQR1ctzUPtJ_E7fQaeCaQuRL9th05jD664Yltlm_WzeJbElcd82vgZMheg97QCo7ddioqBh4lDoQ29tQnnxjug"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "X-CSRF-TOKEN",
+        "value": "to9eYFQaWkr9E6VU-x-_MgXlvvZMDNDvLc5C3Zkq9jHx8zqng7tuU20sPyjQIsZmzTKLAjbdk88uO-XCGfgh6asTkweVxAiR",
+        "isDisabled": true
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\": \"frarm\",\n  \"description\": \"Learn AWS 2\"\n}",
+      "form": []
+    },
     "tests": []
   }
 ]
