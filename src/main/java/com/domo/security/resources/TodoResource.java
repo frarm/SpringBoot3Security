@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@RestController
+//@RestController
 public class TodoResource {
 
     private Logger logger = LoggerFactory.getLogger(getClass());

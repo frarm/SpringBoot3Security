@@ -1,5 +1,6 @@
 package com.domo.security.resources;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,4 +11,11 @@ public class HelloWorldResource {
     public String helloWorld() {
         return "Hello World 4";
     }
+
+    @GetMapping("/")
+    public String helloWorldOauth(Authentication authentication) {
+        System.out.println(authentication);
+        return "Hello World";
+    }
+
 }
